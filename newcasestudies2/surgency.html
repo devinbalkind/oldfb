@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>surgency</title>
+<script language="javascript" type="text/javascript">
+<!--
+//first part of script sets the locations
+
+    var win=null;
+function newWindow(pagelink,pagename,w,h,scroll,tool,stats,pos){
+
+   if(pos=="corner"){
+     LeftPosition=0;
+     TopPosition=20
+     }
+   if(pos=="center"){
+     LeftPosition=(screen.width)?(screen.width-w)/2:100;
+     TopPosition=(screen.height)?(screen.height-h)/2:100;
+     }
+   else if((pos!="center" && pos!="set") || pos==null){
+     LeftPosition=0;
+     TopPosition=20
+     }
+
+//this part writes in the settings for the popup window
+     settings='height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',toolbar='+tool+',status='+stats+',resizable';
+     win=window.open(pagelink,pagename,settings); 
+}
+
+// -->
+</script>
+
+</head>
+<!--place background color in body tag-->
+<body bgcolor="#999999" text="#000000" link="#990000">
+<!-- FB Archive Navigation -->
+<div id="fb-archive-nav" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:rgba(26,26,46,0.95);padding:6px 15px;font-family:Arial,sans-serif;font-size:11px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(5px);border-bottom:1px solid rgba(233,69,96,0.3);">
+<a href="/index.html" style="color:#e94560;text-decoration:none;font-weight:bold;letter-spacing:1px;">[FB] ARCHIVE</a>
+<div style="display:flex;gap:8px;align-items:center;">
+<span style="color:#5a6a8a;">Era:</span>
+<a href="/homepages/bat/indexBAT.html" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">BAT</a>
+<a href="/homepages/gug/indexGUG.html" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">GUG</a>
+<a href="/homepages/msn/indexMSN.html" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">MSN</a>
+<a href="/case_studies/" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">Cases</a>
+<button onclick="document.getElementById('fb-archive-nav').style.display='none'" style="background:none;border:none;color:#5a6a8a;cursor:pointer;font-size:14px;margin-left:10px;">✕</button>
+</div>
+</div>
+<div style="height:28px;"></div>
+<!-- End FB Archive Navigation -->
+
+
+<div align=center>
+  <table height=97% width=97% border=0 cellpadding=2
+cellspacing=0 bordercolor="#FFFFFF" bgcolor="#FFFFFF">
+    <tr>
+      <td height=525> 
+        <div align="center"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="275" height="210" name="surgency">
+            <PARAM name=movie value="surgencyFB.swf">
+            <PARAM name=quality value=high><PARAM name="BGCOLOR" value="#FFFFFF">
+            <EMBED src="surgencyFB.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="275" height="210" name="surgency" bgcolor="#FFFFFF">
+            </EMBED> 
+          </OBJECT> 
+          <!--begin logo src-->
+        </div>
+        <div align="center"><br>
+          <!--end logo src--> <font face=helvetica> <!--begin headline--> <b>Defining eBusiness Transformation</b><br>
+          <br>
+          <!--end headline--> 
+	  </FONT></div>
+        <font face=helvetica> 
+        <!--begin copy-->
+        <font size=-1> Directed to CXO's and high-level e-business decision-makers, the Surgency web site was created as a marketing vehicle, providing information about this Boston-headquartered, strategy services firm whose primary focus is e-business transformation.  The firm was previously named Benchmarking Partners, Inc., and Frankfurt Balkind also developed its new brand strategy, name, identity and marketing materials which dramatize the change and speed required to succeed in today's marketing environment. </font></font> 
+        <!-end copy-->
+        <br>
+          <br>
+        <br>
+          <br>
+          <!--begin screen grabs--> 
+        <div align=center> <a href="http://www.surgency.com" onclick="newWindow(this.href,'surgency','750','450','yes','yes','yes','corner');return false;"><img src="surgency.jpg" border=0 width="385" height="313" alt="Surgency.com"></a> 
+        </div>
+      </td>
+<!--end screen grabs-->
+</tr>
+</table>
+</div>
+</body>
+</html>

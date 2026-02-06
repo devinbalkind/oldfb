@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>sanctum</title>
+<script language="javascript" type="text/javascript">
+<!--
+//first part of script sets the locations
+
+    var win=null;
+function newWindow(pagelink,pagename,w,h,scroll,tool,stats,pos){
+
+   if(pos=="corner"){
+     LeftPosition=0;
+     TopPosition=20
+     }
+   if(pos=="center"){
+     LeftPosition=(screen.width)?(screen.width-w)/2:100;
+     TopPosition=(screen.height)?(screen.height-h)/2:100;
+     }
+   else if((pos!="center" && pos!="set") || pos==null){
+     LeftPosition=0;
+     TopPosition=20
+     }
+
+//this part writes in the settings for the popup window
+     settings='height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',toolbar='+tool+',status='+stats+',resizable';
+     win=window.open(pagelink,pagename,settings); 
+}
+
+// -->
+</script>
+
+</head>
+<!--place background color in body tag-->
+<body bgcolor="#66CC33" text="#000000" link="#990000">
+<!-- FB Archive Navigation -->
+<div id="fb-archive-nav" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:rgba(26,26,46,0.95);padding:6px 15px;font-family:Arial,sans-serif;font-size:11px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(5px);border-bottom:1px solid rgba(233,69,96,0.3);">
+<a href="/index.html" style="color:#e94560;text-decoration:none;font-weight:bold;letter-spacing:1px;">[FB] ARCHIVE</a>
+<div style="display:flex;gap:8px;align-items:center;">
+<span style="color:#5a6a8a;">Era:</span>
+<a href="/homepages/bat/indexBAT.html" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">BAT</a>
+<a href="/homepages/gug/indexGUG.html" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">GUG</a>
+<a href="/homepages/msn/indexMSN.html" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">MSN</a>
+<a href="/case_studies/" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">Cases</a>
+<button onclick="document.getElementById('fb-archive-nav').style.display='none'" style="background:none;border:none;color:#5a6a8a;cursor:pointer;font-size:14px;margin-left:10px;">✕</button>
+</div>
+</div>
+<div style="height:28px;"></div>
+<!-- End FB Archive Navigation -->
+
+
+<div align=center>
+  <table height=97% width=97% border=0 cellpadding=2
+cellspacing=0 bordercolor="#FFFFFF" bgcolor="#FFFFFF">
+    <tr>
+      <td height=525> 
+        <div align="center">
+          <p>&nbsp;</p>
+          <p><a href="http://www.sanctuminc.com/" target="_new" onclick="newWindow(this.href,'sui','750','450','yes','yes','yes','corner');return false;"><img src="sa_cmyk.jpg" width="252" height="80" border="0" alt="Sanctum"></a>
+            <!--begin logo src-->
+          </p>
+        </div>
+        <div align="center"><br>
+          <br>
+          <!--end logo src--> <font face=helvetica> 
+		  <!--begin headline--> 
+		  <b>Establishing a New Web Security Category </b><br><br>
+          <!--end headline--> 
+	  </FONT></div><font face=helvetica>
+	  <!--begin copy--> <font size=-1> Sanctum develops new technology to prevent hackers from exploiting 
+vulnerabilities in web application software. To dramatize the problems differentiated by Sanctum, we created the concept of
+ Web Perversion which dramatizes the way hackers work.  The site describes four types of perverts and shows how Sanctums
+ products Save Your Site. Within 90 days, this B2B marketing site helped close 13 six-figure deals and 10 new partnerships. 
+Frankfurt Balkind also created the companys name, Sanctum (formerly Perfecto Technologies), identity, advertising campaign, and marketing materials.</font></font> <!-end copy--> <br>
+          <br>
+          <br>
+          <!--begin screen grabs-->
+        <div align=center> 
+          <p><a href="http://www.sanctuminc.com/" target="_new" onclick="newWindow(this.href,'sui','750','450','yes','yes','yes','corner');return false;"><img src="sanctumscreengrab1.jpg" border=0 width="360" height="296" alt="Sanctum"></a> 
+          </p>
+          <p>&nbsp;</p>
+          <p><a href="http://www.sanctuminc.com/" target="_new" onclick="newWindow(this.href,'sui','750','450','yes','yes','yes','corner');return false;"><img src="sanctumscreengrab2.jpg" width="360" height="296" alt="Sanctum"></a></p>
+        </div>
+      </td>
+<!--end screen grabs-->
+</tr>
+</table>
+</div>
+</body>
+</html>

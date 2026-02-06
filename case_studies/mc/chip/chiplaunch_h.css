@@ -1,0 +1,14 @@
+P {font-family:Arial; font-size:9pt;}
+H3 {font-family:Arial; font-size:14pt;}
+#scrollWindow {position:absolute; left:18; top:45; width:439; height:117; clip:rect(0,439,117,0);}
+#scrollBorderTop {position:absolute; left:0; top:0; width:439; height:0; clip:rect(0,439,0,0);}
+#scrollBorderBottom {position:absolute; left:0; top:117; width:439; height:0; clip:rect(0,439,0,0);}
+#scrollBorderLeft {position:absolute; left:0; top:0; width:0; height:117; clip:rect(0,0,117,0);}
+#scrollBorderRight {position:absolute; left:439; top:0; width:0; height:117; clip:rect(0,0,117,0);}
+#scrollTextWindow {position:absolute; left:0; top:0; width:421; height:117; clip:rect(0,421,117,0);}
+#scrollTextDiv {position:absolute; left:10; top:10; width:366;}
+#scrollBar {position:absolute; left:421; top:0; width:18; height:117; clip:rect(0,18,117,0); background-color:"#F06B00";}
+#scrollBoxDiv {position:absolute; left:0; top:0; width:18; height:18; clip:rect(0,18,18,0); background-color:"#F06B00";}
+#scrollArrowUpDiv {position:absolute; left:0; top:0; width:18; height:0; clip:rect(0,18,0,0);}
+#scrollArrowDownDiv {position:absolute; left:0; top:117; width:18; height:0; clip:rect(0,18,0,0);}
+

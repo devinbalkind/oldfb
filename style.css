@@ -1,0 +1,49 @@
+ td {font-size:10pt;
+     color:FFFFCC;
+	font-family:arial,helvetica,sans-serif;}
+	
+ 
+.head {font-size:15pt;
+	   color:FFFFCC;	
+       font-family:arial,helvetica,sans-serif;
+	   font-weight:900;}
+	   
+	
+ p {font-size:10pt;
+    color:FFFFCC;
+	font-family:arial,helvetica,sans-serif;}
+
+ p.about {font-size:10pt;
+    color:FFFF99;
+	font-family:arial,helvetica,sans-serif;}
+	
+ p.aboutbig {font-size:12pt;
+    color:FFFF99;
+	font-family:arial,helvetica,sans-serif;}
+	
+ pre {font-size:10pt;
+    color:FFFFCC;
+	font-family:arial,helvetica,sans-serif;}
+
+ p.small {font-size:8pt;
+	font-family:arial,helvetica,sans-serif;}
+
+ .small {font-size:8pt;
+	font-family:arial,helvetica,sans-serif;}	
+
+
+A:visited {font-size:10pt;
+	color:silver;
+	}
+
+A:link {font-size:10pt;
+	color:ffffcc;
+	}
+
+A:hover {font-size:10pt;
+color:red;
+}
+	
+A {font-size:10pt;
+	color:ffffcc;
+	}	

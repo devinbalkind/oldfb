@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Capital IQ</title>
+
+<script language="javascript" type="text/javascript">
+<!--
+//first part of script sets the locations
+
+    var win=null;
+function newWindow(pagelink,pagename,w,h,scroll,tool,stats,pos){
+
+   if(pos=="corner"){
+     LeftPosition=0;
+     TopPosition=20
+     }
+   if(pos=="center"){
+     LeftPosition=(screen.width)?(screen.width-w)/2:100;
+     TopPosition=(screen.height)?(screen.height-h)/2:100;
+     }
+   else if((pos!="center" && pos!="set") || pos==null){
+     LeftPosition=0;
+     TopPosition=20
+     }
+
+//this part writes in the settings for the popup window
+     settings='height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',toolbar='+tool+',status='+stats+',resizable';
+     win=window.open(pagelink,pagename,settings); 
+}
+
+// -->
+</script>
+
+</head>
+<!--place background color in body tag-->
+<body bgcolor="#E6F1D1" text="#000000" link="#6600CC">
+<!-- FB Archive Navigation -->
+<div id="fb-archive-nav" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:rgba(26,26,46,0.95);padding:6px 15px;font-family:Arial,sans-serif;font-size:11px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(5px);border-bottom:1px solid rgba(233,69,96,0.3);">
+<a href="/index.html" style="color:#e94560;text-decoration:none;font-weight:bold;letter-spacing:1px;">[FB] ARCHIVE</a>
+<div style="display:flex;gap:8px;align-items:center;">
+<span style="color:#5a6a8a;">Era:</span>
+<a href="/homepages/bat/indexBAT.html" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">BAT</a>
+<a href="/homepages/gug/indexGUG.html" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">GUG</a>
+<a href="/homepages/msn/indexMSN.html" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">MSN</a>
+<a href="/case_studies/" style="color:#8892b0;text-decoration:none;padding:3px 8px;border-radius:3px;background:rgba(255,255,255,0.05);">Cases</a>
+<button onclick="document.getElementById('fb-archive-nav').style.display='none'" style="background:none;border:none;color:#5a6a8a;cursor:pointer;font-size:14px;margin-left:10px;">✕</button>
+</div>
+</div>
+<div style="height:28px;"></div>
+<!-- End FB Archive Navigation -->
+
+
+<div align="center">
+  <table height=97% width=97% border=0 cellpadding=2
+cellspacing=0 bordercolor="#FFFFFF" bgcolor="#FFFFFF">
+    <tr>
+      <td height=525><div align="center"><BR>&nbsp;<img src="capIQlogo.gif" width="283" height="55" border="0" alt="Capital IQ">
+	<P>	  
+
+	  
+	   
+<font face=helvetica> <!--begin headline--> <b>Bringing Two Parties Together</b></font><br>
+          <br>
+          <!--end headline-->
+	  </div>
+  <!--begin copy--> <font face=helvetica size=-1> How do you bring two parties together &#151; in this case investment bankers and investors? By highlighting the best market intelligence and demonstrating the product's formidable search, CRM and transaction capabilities for investment bankers. Along with the site, Frankfurt Balkind also created the Capital IQ name and identity, direct marketing campaign and collateral materials. </font> <!--end copy--> <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <!--begin screen grabs--> 
+        <div align=center> <a href="http://www.capitaliq.com" onclick="newWindow(this.href,'CapitalIQ','750','450','yes','yes','yes','corner');return false;"><img src="capIQscreenGrab.jpg" width="350" height="321" border="0" alt="CapitalIQ.com"></a> 
+        </div>
+      </td>
+<!--end screen grabs-->
+</tr>
+</table>
+
+</body>
+</html>
