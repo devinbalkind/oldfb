@@ -144,53 +144,6 @@
             border-color: #c9b98a;
         }
 
-        /* --- Photos & Videos --- */
-        .albums-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .album-card {
-            text-align: center;
-            text-decoration: none;
-            color: #d4d0c8;
-            transition: transform 0.3s;
-        }
-
-        .album-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .album-thumb {
-            width: 100%;
-            aspect-ratio: 1;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 12px;
-            overflow: hidden;
-            transition: border-color 0.3s;
-        }
-
-        .album-card:hover .album-thumb {
-            border-color: rgba(201, 185, 138, 0.3);
-        }
-
-        .album-thumb img {
-            width: 60%;
-            opacity: 0.7;
-        }
-
-        .album-label {
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            color: #8a8577;
-        }
-
         /* --- Memorial Events --- */
         .events-grid {
             display: grid;
@@ -303,11 +256,6 @@
                 margin: 0 auto;
             }
 
-            .albums-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
-            }
-
             .events-grid {
                 grid-template-columns: 1fr;
             }
@@ -326,7 +274,6 @@
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#photos">Photos &amp; Videos</a></li>
             <li><a href="#memorial">Memorial Events</a></li>
             <li><a href="#archive">Archive</a></li>
         </ul>
@@ -363,31 +310,6 @@
                 <a href="https://www.legacy.com/us/obituaries/nytimes/name/aubrey-balkind-obituary?id=58474083"
                     target="_blank" class="read-more">Read Full Obituary →</a>
             </div>
-        </div>
-    </section>
-
-    <!-- Photos & Videos -->
-    <section id="photos">
-        <h2>Photos &amp; Videos</h2>
-        <div class="albums-grid">
-            <a href="#" class="album-card">
-                <div class="album-thumb">
-                    <img src="images/album_placeholder.png" alt="Album">
-                </div>
-                <div class="album-label">South Africa</div>
-            </a>
-            <a href="#" class="album-card">
-                <div class="album-thumb">
-                    <img src="images/album_placeholder.png" alt="Album">
-                </div>
-                <div class="album-label">New York</div>
-            </a>
-            <a href="#" class="album-card">
-                <div class="album-thumb">
-                    <img src="images/album_placeholder.png" alt="Album">
-                </div>
-                <div class="album-label">California</div>
-            </a>
         </div>
     </section>
 
