@@ -1,266 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frankfurt Balkind Archive - Wayback Machine Recreation</title>
+    <title>Aubrey Balkind — 1944–2025</title>
+    <meta name="description" content="Remembering Aubrey Balkind (1944–2025) — innovative thinker, creative director, and founder of Frankfurt Balkind.">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            min-height: 100vh;
-            color: #fff;
+            font-family: 'Inter', sans-serif;
+            background: #0d0d0d;
+            color: #d4d0c8;
+            line-height: 1.7;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
+        /* --- Navigation --- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background: rgba(13,13,13,0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            padding: 14px 0;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 300;
-            letter-spacing: 4px;
-            margin-bottom: 10px;
-            background: linear-gradient(90deg, #e94560, #ff6b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .subtitle {
-            color: #8892b0;
-            font-size: 1rem;
-            letter-spacing: 2px;
-        }
-
-        .archive-badge {
-            display: inline-block;
-            background: rgba(233, 69, 96, 0.2);
-            border: 1px solid #e94560;
-            color: #e94560;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            margin-top: 15px;
-            letter-spacing: 1px;
-        }
-
-        .sections {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .section {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 25px;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .section:hover {
-            transform: translateY(-5px);
-            border-color: #e94560;
-            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.2);
-        }
-
-        .section h2 {
-            font-size: 1.2rem;
-            font-weight: 500;
-            margin-bottom: 15px;
-            color: #e94560;
-        }
-
-        .section p {
-            color: #8892b0;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .homepage-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-            gap: 10px;
-        }
-
-        .homepage-link {
-            display: block;
-            background: rgba(255, 255, 255, 0.1);
-            color: #ccd6f6;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 6px;
-            text-align: center;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.2s ease;
-        }
-
-        .homepage-link:hover {
-            background: #e94560;
-            color: #fff;
-        }
-
-        .main-link {
-            display: inline-block;
-            background: linear-gradient(135deg, #e94560, #ff6b6b);
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-        }
-
-        .main-link:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
-        }
-
-        .stats {
-            text-align: center;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 12px;
-            margin-bottom: 30px;
-        }
-
-        .stats-grid {
+        nav ul {
+            list-style: none;
             display: flex;
             justify-content: center;
-            gap: 50px;
+            gap: 30px;
             flex-wrap: wrap;
         }
 
-        .stat {
+        nav a {
+            color: #8a8577;
+            text-decoration: none;
+            font-size: 0.78rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: #c9b98a; }
+
+        /* --- Hero --- */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 20px 80px;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 30%, rgba(60,50,30,0.15) 0%, transparent 70%);
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.8rem;
+            font-weight: 300;
+            letter-spacing: 6px;
+            color: #e8e0d0;
+            margin-bottom: 10px;
+        }
+
+        .hero .dates {
+            font-size: 1.1rem;
+            letter-spacing: 4px;
+            color: #8a8577;
+            font-weight: 300;
+        }
+
+        .hero .divider {
+            width: 60px;
+            height: 1px;
+            background: #c9b98a;
+            margin: 30px auto;
+        }
+
+        /* --- Sections --- */
+        section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 30px;
+        }
+
+        section h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            color: #c9b98a;
+            margin-bottom: 40px;
             text-align: center;
         }
 
-        .stat-value {
-            font-size: 2rem;
-            font-weight: 600;
-            color: #e94560;
+        /* --- About --- */
+        .about-content {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+            align-items: start;
         }
 
-        .stat-label {
-            font-size: 0.8rem;
-            color: #8892b0;
+        .about-image img {
+            width: 100%;
+            border-radius: 4px;
+            filter: grayscale(20%);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            color: #b0a898;
+        }
+
+        .about-text .read-more {
+            display: inline-block;
+            color: #c9b98a;
+            text-decoration: none;
+            font-size: 0.85rem;
             letter-spacing: 1px;
-            text-transform: uppercase;
+            border-bottom: 1px solid rgba(201,185,138,0.3);
+            padding-bottom: 2px;
+            transition: border-color 0.3s;
         }
 
+        .about-text .read-more:hover {
+            border-color: #c9b98a;
+        }
+
+        /* --- Photos & Videos --- */
+        .albums-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .album-card {
+            text-align: center;
+            text-decoration: none;
+            color: #d4d0c8;
+            transition: transform 0.3s;
+        }
+
+        .album-card:hover { transform: translateY(-5px); }
+
+        .album-thumb {
+            width: 100%;
+            aspect-ratio: 1;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: border-color 0.3s;
+        }
+
+        .album-card:hover .album-thumb {
+            border-color: rgba(201,185,138,0.3);
+        }
+
+        .album-thumb img {
+            width: 60%;
+            opacity: 0.7;
+        }
+
+        .album-label {
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            color: #8a8577;
+        }
+
+        /* --- Memorial Events --- */
+        .events-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .event-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .event-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #e8e0d0;
+            margin-bottom: 8px;
+        }
+
+        .event-card .event-date {
+            color: #c9b98a;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .event-card .event-location {
+            color: #8a8577;
+            font-size: 0.85rem;
+        }
+
+        /* --- Archive --- */
+        .archive-links {
+            list-style: none;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .archive-links li {
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .archive-links a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 10px;
+            color: #b0a898;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s, padding-left 0.3s;
+        }
+
+        .archive-links a:hover {
+            color: #c9b98a;
+            padding-left: 15px;
+        }
+
+        .archive-links .arrow {
+            color: #5a5647;
+            transition: color 0.3s;
+        }
+
+        .archive-links a:hover .arrow { color: #c9b98a; }
+
+        /* --- Footer --- */
         footer {
             text-align: center;
-            padding: 30px;
-            color: #5a6a8a;
+            padding: 60px 20px;
+            color: #5a5647;
             font-size: 0.8rem;
+            letter-spacing: 1px;
         }
 
-        footer a {
-            color: #e94560;
-            text-decoration: none;
+        /* --- Responsive --- */
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 2.4rem; letter-spacing: 3px; }
+            .about-content { grid-template-columns: 1fr; }
+            .about-image { max-width: 280px; margin: 0 auto; }
+            .albums-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .events-grid { grid-template-columns: 1fr; }
+            nav ul { gap: 15px; padding: 0 10px; }
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <h1>FRANKFURT BALKIND</h1>
-            <p class="subtitle">Strategic Communications Agency</p>
-            <span class="archive-badge">📦 WAYBACK MACHINE ARCHIVE • CIRCA 2000</span>
-        </header>
 
-        <div class="stats">
-            <div class="stats-grid">
-                <div class="stat">
-                    <div class="stat-value">1,378</div>
-                    <div class="stat-label">Files Recovered</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value">71</div>
-                    <div class="stat-label">Case Studies</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value">17</div>
-                    <div class="stat-label">Homepage Variants</div>
-                </div>
-            </div>
-        </div>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#photos">Photos &amp; Videos</a></li>
+            <li><a href="#memorial">Memorial Events</a></li>
+            <li><a href="#archive">Archive</a></li>
+        </ul>
+    </nav>
 
-        <div class="sections">
-            <div class="section">
-                <h2>🏠 Homepage Variants</h2>
-                <p>Different branded entry points created for various clients and campaigns.</p>
-                <div class="homepage-grid">
-                    <a href="homepages/bat/indexBAT.html" class="homepage-link">BAT</a>
-                    <a href="homepages/acr/indexACR.html" class="homepage-link">ACR</a>
-                    <a href="homepages/att/indexATT.html" class="homepage-link">AT&T</a>
-                    <a href="homepages/gug/indexGUG.html" class="homepage-link">GUG</a>
-                    <a href="homepages/mas/indexMAS.html" class="homepage-link">MAS</a>
-                    <a href="homepages/msn/indexMSN.html" class="homepage-link">MSN</a>
-                    <a href="homepages/ncr/indexNCR.html" class="homepage-link">NCR</a>
-                    <a href="homepages/rea/indexREA.html" class="homepage-link">REA</a>
-                    <a href="homepages/ros/indexROS.html" class="homepage-link">ROS</a>
-                    <a href="homepages/sak/indexSAK.html" class="homepage-link">SAK</a>
-                    <a href="homepages/se2/indexSE2.html" class="homepage-link">SE2</a>
-                    <a href="homepages/sea/indexSEA.html" class="homepage-link">SEA</a>
-                    <a href="homepages/sha/indexSHA.html" class="homepage-link">SHA</a>
-                    <a href="homepages/son/indexSON.html" class="homepage-link">SON</a>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>📄 Main Site Pages</h2>
-                <p>Core pages from the Frankfurt Balkind website.</p>
-                <div class="homepage-grid">
-                    <a href="about.html" class="homepage-link">About</a>
-                    <a href="access.html" class="homepage-link">Access</a>
-                    <a href="clients.html" class="homepage-link">Clients</a>
-                    <a href="contacts.html" class="homepage-link">Contact</a>
-                    <a href="featured.html" class="homepage-link">Featured</a>
-                    <a href="works.html" class="homepage-link">Works</a>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>💼 Case Studies</h2>
-                <p>Portfolio of client work including Adobe, AT&T, ESPN, Sony, and more. Includes both original (2000)
-                    and newer additions (2001-2003).</p>
-                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                    <a href="case_studies/" class="main-link">Browse Case Studies →</a>
-                    <a href="newcasestudies2/" class="main-link"
-                        style="background: linear-gradient(135deg, #5a6a8a, #8892b0);">View Newer Work →</a>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <p>Archived from <a href="https://web.archive.org/web/20001212021100/http://www.frankfurtbalkind.com/"
-                    target="_blank">Wayback Machine</a> • December 2000 snapshot</p>
-            <p style="margin-top: 10px;">Original site by Frankfurt Balkind Partners</p>
-        </footer>
+    <!-- Hero -->
+    <div class="hero">
+        <h1>AUBREY BALKIND</h1>
+        <div class="dates">1944 — 2025</div>
+        <div class="divider"></div>
     </div>
-</body>
 
+    <!-- About Aubrey -->
+    <section id="about">
+        <h2>About Aubrey</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.squarespace-cdn.com/content/v1/683a5cd6e9c9ea2fe7e21a6c/5a2e14e3-b1a3-467b-ab1f-2f4b9ecbf2e1/Screen+Shot+2025-06-01+at+12.35.55+PM.png" alt="Aubrey Balkind">
+            </div>
+            <div class="about-text">
+                <p>Born in Johannesburg, South Africa, Aubrey Balkind was an innovative thinker and highly creative businessman who co-founded one of the first integrated communications agencies. After graduating as a CPA from Witwatersrand University, he made his way to Columbia University for his MBA. In New York, his passion for the creative process led him to partner with designer Phil Gips, forming what eventually became Frankfurt Balkind — a 160-person firm spanning New York, Los Angeles, and San Francisco that won every major industry creative award.</p>
+
+                <p>Among the agency's landmark projects were the launch of CNN, the identity for Adobe Acrobat, ESPN's graphic identity, and iconic movie posters for <em>Rosemary's Baby</em>, <em>Alien</em>, <em>Forrest Gump</em>, and <em>Titanic</em>. Later in life, Aubrey moved to Ojai, California, where he opened the Sane Living Center — a space reflecting his vision for a more mindful, less consumer-driven society. He passed away on May 15, 2025, at age 81, surrounded by family.</p>
+
+                <a href="https://www.legacy.com/us/obituaries/nytimes/name/aubrey-balkind-obituary?id=58474083" target="_blank" class="read-more">Read Full Obituary →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photos & Videos -->
+    <section id="photos">
+        <h2>Photos &amp; Videos</h2>
+        <div class="albums-grid">
+            <a href="#" class="album-card">
+                <div class="album-thumb">
+                    <img src="images/album_placeholder.png" alt="Album">
+                </div>
+                <div class="album-label">South Africa</div>
+            </a>
+            <a href="#" class="album-card">
+                <div class="album-thumb">
+                    <img src="images/album_placeholder.png" alt="Album">
+                </div>
+                <div class="album-label">New York</div>
+            </a>
+            <a href="#" class="album-card">
+                <div class="album-thumb">
+                    <img src="images/album_placeholder.png" alt="Album">
+                </div>
+                <div class="album-label">California</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Memorial Events -->
+    <section id="memorial">
+        <h2>Memorial Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <h3>New York City</h3>
+                <div class="event-date">January 31, 2026</div>
+                <div class="event-location">New York, NY</div>
+            </div>
+            <div class="event-card">
+                <h3>Ojai, California</h3>
+                <div class="event-date">June 21, 2025</div>
+                <div class="event-location">Ojai, CA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive -->
+    <section id="archive">
+        <h2>Archive</h2>
+        <ul class="archive-links">
+            <li>
+                <a href="archive.html">
+                    Frankfurt Balkind Website
+                    <span class="arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.saneliving.com" target="_blank">
+                    SaneLiving.com
+                    <span class="arrow">→</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        In loving memory
+    </footer>
+
+</body>
 </html>
